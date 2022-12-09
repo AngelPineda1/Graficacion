@@ -1,0 +1,74 @@
+﻿<Window x:Class="Graficacion.Cartas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="Cartas" Height="450" Width="800">
+    <Canvas>
+        <Canvas>
+            <Rectangle Width="200" Height="300" Stroke="Black" Canvas.Left="100" Canvas.Top="40" Fill="White">
+            </Rectangle>
+            <Path Data="M120,55 280,55 280,95 L280,95 Q230,50 120,150 Z M120,320 280,320 280,210 L280,210 Q180,310 120,280 Z" Stroke="Black" Fill="Green"></Path>
+            <Label FontSize="100" Foreground="Green" FontWeight="ExtraBlack" Canvas.Top="100" Canvas.Left="170">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="50" Canvas.Left="120">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="325" Canvas.Left="280">1
+                <Label.RenderTransform>
+                    <RotateTransform Angle="180"></RotateTransform>
+                </Label.RenderTransform>
+            </Label>
+            <Canvas.RenderTransform>
+                <RotateTransform Angle="-10" CenterX="200" CenterY="100"></RotateTransform>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Canvas>
+            <Rectangle Width="200" Height="300" Stroke="Black" Canvas.Left="100" Canvas.Top="40" Fill="White">
+            </Rectangle>
+            <Path Data="M120,55 280,55 280,95 L280,95 Q230,50 120,150 Z M120,320 280,320 280,210 L280,210 Q180,310 120,280 Z" Stroke="Black" Fill="Blue"></Path>
+            <Label FontSize="100" Foreground="Blue"  FontWeight="ExtraBlack" Canvas.Top="100" Canvas.Left="170">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="50" Canvas.Left="120">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="325" Canvas.Left="280">1
+                <Label.RenderTransform>
+                    <RotateTransform Angle="180"></RotateTransform>
+                </Label.RenderTransform>
+            </Label>
+            <Canvas.RenderTransform>
+                <RotateTransform Angle="-4" CenterX="10" CenterY="-450"></RotateTransform>
+            </Canvas.RenderTransform>
+        </Canvas>
+        
+        
+        <Canvas>
+            
+            <Canvas Canvas.Top="-22" Canvas.Left="80">
+                <Rectangle Width="200" Height="300" Stroke="Black" Canvas.Left="100" Canvas.Top="40" Fill="White">
+            </Rectangle>
+            <Path Data="M120,55 280,55 280,95 L280,95 Q230,50 120,150 Z M120,320 280,320 280,210 L280,210 Q180,310 120,280 Z" Stroke="Black" Fill="Red" ></Path>
+            <Label FontSize="100" Foreground="Red" FontWeight="ExtraBlack" Canvas.Top="100" Canvas.Left="170">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="50" Canvas.Left="120">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="325" Canvas.Left="280">1
+                <Label.RenderTransform>
+                    <RotateTransform Angle="180" ></RotateTransform>
+                </Label.RenderTransform>
+            </Label>
+            
+        </Canvas>
+        </Canvas>
+        <!--<Canvas>
+            <Rectangle Width="200" Height="300" Stroke="Black" Canvas.Left="140" Canvas.Top="10" Fill="White">
+            </Rectangle>
+            <Path Data="M120,55 280,55 280,95 L280,95 Q230,50 120,150 Z M120,320 280,320 280,210 L280,210 Q180,310 120,280 Z" Stroke="Black" Fill="Red" Canvas.Top="-50"></Path>
+            <Label FontSize="100" Foreground="Red" FontWeight="ExtraBlack" Canvas.Top="100" Canvas.Left="170">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="50" Canvas.Left="120">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="ExtraBlack" Canvas.Top="325" Canvas.Left="280">1
+                <Label.RenderTransform>
+                    <RotateTransform Angle="180" ></RotateTransform>
+                </Label.RenderTransform>
+            </Label>
+            
+        </Canvas>-->
+
+
+    </Canvas>
+</Window>

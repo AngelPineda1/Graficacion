@@ -1,0 +1,24 @@
+﻿<Window x:Class="Graficacion.Guardar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="Guardar" Height="450" Width="800">
+    <Canvas>
+        <Path Data="M200,210 10,210 10,10 170,10 200,40 z" Stroke="Black" Fill="Black"></Path>
+        <Rectangle Height="90" Width="130" Fill="Gray" Canvas.Left="30" Canvas.Top="10"> </Rectangle>
+        <Rectangle Height="50" Width="30" Canvas.Top="40" Canvas.Left="110" RadiusX="5" RadiusY="5" Fill="Black"></Rectangle>
+        <Rectangle Width="140" Height="70" Canvas.Left="25" Canvas.Top="120" Fill="White" ></Rectangle>
+        <Line Stroke="Wheat" StrokeThickness="2" X1="120" Canvas.Top="125" Canvas.Left="35"></Line>
+        <Line Stroke="Black" StrokeThickness="2" X1="120" Canvas.Top="133" Canvas.Left="35" StrokeDashArray="1,2"></Line>
+        <Line Stroke="Wheat" StrokeThickness="2" X1="120" Canvas.Top="140" Canvas.Left="35"></Line>
+        <Line Stroke="Wheat" StrokeThickness="2" X1="120" Canvas.Top="155" Canvas.Left="35"></Line>
+        <Line Stroke="Wheat" StrokeThickness="2" X1="120" Canvas.Top="170" Canvas.Left="35"></Line>
+        <Line Stroke="Wheat" StrokeThickness="2" X1="120" Canvas.Top="180" Canvas.Left="35"></Line>
+        <TextBlock Foreground="Red" Canvas.Left="60" Canvas.Top="140" FontStyle="Italic"> Informacion</TextBlock>
+        <TextBlock Foreground="Blue" Canvas.Left="60" Canvas.Top="155" FontStyle="Italic"> Confidencial</TextBlock>
+        <Rectangle Width="140" Height="10" Canvas.Left="25" Canvas.Top="190" Fill="red"></Rectangle>
+    </Canvas>
+</Window>

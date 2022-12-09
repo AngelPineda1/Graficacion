@@ -1,0 +1,64 @@
+﻿<Window x:Class="Graficacion.EsferadelDragon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="EsferadelDragon" Height="450" Width="800">
+    <Canvas>
+        <Canvas>
+            <Ellipse Width="300" Height="300" Canvas.Left="300">
+                <Ellipse.Fill>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,0.5" >
+                        <GradientStop Color="DarkOrange" Offset="0.9"></GradientStop>
+                        <GradientStop Color="Orange" Offset="0"></GradientStop>
+                        <GradientStop Color="Orange" Offset="0.37"></GradientStop>
+                        <GradientStop Color="DarkOrange" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                    
+                </Ellipse.Fill>
+                <Ellipse.RenderTransform>
+                    <RotateTransform Angle="90"></RotateTransform>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Canvas  Canvas.Left="90" Canvas.Top="30">
+                <Canvas.RenderTransform>
+                    <RotateTransform Angle="15"></RotateTransform>
+                </Canvas.RenderTransform>
+                <Path  StrokeThickness="1" Canvas.Top="10"
+              Data="M40,0 28.55,28.55 0,28.55 22.84,51.39 11.42,80 40,62.81 68.52,80 57.16,51.39 80,28.55 51.39,28.55Z">
+                    <Path.Fill>
+                        <LinearGradientBrush StartPoint="1,1" EndPoint="1,0">
+                            <GradientStop Color="Orange" Offset="0.9"></GradientStop>
+                            <GradientStop Color="Orange" Offset="0.8"></GradientStop>
+                            <GradientStop Color="Red" Offset="0.6"></GradientStop>
+                            <GradientStop Color="Red"></GradientStop>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <Path Fill="red" StrokeThickness="1" Canvas.Top="30" Canvas.Left="80"
+              Data="M40,0 28.55,28.55 0,28.55 22.84,51.39 11.42,80 40,62.81 68.52,80 57.16,51.39 80,28.55 51.39,28.55Z">
+                </Path>
+                <Path Fill="red"  StrokeThickness="1" Canvas.Top="110" Canvas.Left="80"
+              Data="M40,0 28.55,28.55 0,28.55 22.84,51.39 11.42,80 40,62.81 68.52,80 57.16,51.39 80,28.55 51.39,28.55Z">
+                </Path>
+                <Path Fill="Red" StrokeThickness="1" Canvas.Top="90" 
+              Data="M40,0 28.55,28.55 0,28.55 22.84,51.39 11.42,80 40,62.81 68.52,80 57.16,51.39 80,28.55 51.39,28.55Z">
+                </Path>
+            </Canvas>
+            <Ellipse Width="35" Height="60" Fill="White" Canvas.Top="80" Canvas.Left="240">
+                <Ellipse.RenderTransform>
+                    <SkewTransform  AngleX="15" >
+                        
+                    </SkewTransform>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Path Data="M240,240 Q260,200 240,120 L240,120 Q240,100 270,110 L270,110 Q290,160 240,240" Fill="White" Canvas.Left="90" Canvas.Top="-20">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="20" CenterY="-60" CenterX="10"></RotateTransform>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+    </Canvas>
+</Window>

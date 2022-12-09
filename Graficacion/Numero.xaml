@@ -1,0 +1,86 @@
+﻿<Window x:Class="Graficacion.Numero"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="Numero" Height="700" Width="800">
+    <Canvas>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red"  Canvas.Left="200">
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="25"></DropShadowEffect>
+            </Path.Effect>
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="0,1">
+                    <GradientStop Color="red" Offset="0"></GradientStop>
+                    <GradientStop Color="DarkRed" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red"  Canvas.Left="460 " Canvas.Top="100" >
+            <Path.RenderTransform>
+                <RotateTransform Angle="90"></RotateTransform>
+            </Path.RenderTransform>
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="25"></DropShadowEffect>
+            </Path.Effect>
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="0,1">
+                    <GradientStop Color="red" Offset="0"></GradientStop>
+                    <GradientStop Color="DarkRed" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red"  Canvas.Left="200" Canvas.Top="260">
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="25"></DropShadowEffect>
+            </Path.Effect>
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                    <GradientStop Color="Darkred" Offset="1"></GradientStop>
+                    <GradientStop Color="red" Offset="0.7"></GradientStop>
+                    <GradientStop Color="red" Offset="0.5"></GradientStop>
+                    <GradientStop Color="red" Offset="0.3"></GradientStop>
+                    <GradientStop Color="DarkRed" Offset="0"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red"  Canvas.Left="200 " Canvas.Top="370" >
+            <Path.RenderTransform>
+                <RotateTransform Angle="90"></RotateTransform>
+            </Path.RenderTransform>
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="25"></DropShadowEffect>
+            </Path.Effect>
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                    <GradientStop Color="red" Offset="0.6"></GradientStop>
+                    <GradientStop Color="DarkRed" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red"  Canvas.Left="200" Canvas.Top="530">
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="25"></DropShadowEffect>
+            </Path.Effect>
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                    <GradientStop Color="red" Offset="0.4"></GradientStop>
+                    <GradientStop Color="DarkRed" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red"  Canvas.Left="460 " Fill="Red" Canvas.Top="370" Opacity="0.3" >
+            
+            <Path.RenderTransform>
+                <RotateTransform Angle="90"></RotateTransform>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M5,20 150,20 200,50 150,80 5,80 -45,50 Z" Stroke="Red" Fill="Red" Canvas.Left="200 " Canvas.Top="100" Opacity="0.3">
+            <Path.RenderTransform>
+                <RotateTransform Angle="90"></RotateTransform>
+            </Path.RenderTransform>
+        </Path>
+    </Canvas>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Graficacion.Animacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graficacion"
+        mc:Ignorable="d"
+        Title="Animacion" Height="450" Width="800">
+    <Grid>
+        <Rectangle Width="100" Height="100" Stroke="Black" Name="rectangulo" >
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Red" x:Name="color"></SolidColorBrush>
+            </Rectangle.Fill>
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="MouseLeftButtonDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:3" Storyboard.TargetName="rectangulo" AutoReverse="True" ></DoubleAnimation>
+                            <ColorAnimation Storyboard.TargetName="color" Storyboard.TargetProperty="Color" From="Red" To="DodgerBlue" Duration="0:0:1"></ColorAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+    </Grid>
+</Window>
